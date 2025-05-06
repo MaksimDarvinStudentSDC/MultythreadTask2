@@ -1,0 +1,34 @@
+Taxi T1 0 0
+Taxi T2 10 10
+Taxi T3 5 5
+Taxi T4 3 8
+Taxi T5 12 12
+Taxi T6 6 6
+Taxi T7 1 2
+Taxi T8 7 9
+Taxi T9 4 4
+Taxi T10 8 3
+
+Passenger Alice 1 1 5 5
+Passenger Bob 2 2 8 8
+Passenger Carol 9 1 10 10
+Passenger Dave 0 4 3 3
+Passenger Eve 6 2 1 1
+Passenger Frank 4 9 0 0
+Passenger Grace 8 8 2 2
+Passenger Heidi 5 0 4 6
+Passenger Ivan 3 3 9 9
+Passenger Judy 10 10 0 0
+Passenger Kate 1 1 5 5
+Passenger Leo 2 9 8 1
+Passenger Mia 4 6 7 3
+Passenger Nick 0 0 6 6
+Passenger Oscar 3 3 8 8
+Passenger Peggy 6 1 2 9
+Passenger Quinn 7 2 3 3
+Passenger Ruth 2 7 1 5
+Passenger Sam 9 9 0 0
+Passenger Tina 5 5 4 4
+
+
+

@@ -19,9 +19,7 @@ class Dispatcher {
         if (instance == null) {
             initLock.lock();
             try {
-                if (instance == null) {
                     instance = new Dispatcher();
-                }
             } finally {
                 initLock.unlock();
             }

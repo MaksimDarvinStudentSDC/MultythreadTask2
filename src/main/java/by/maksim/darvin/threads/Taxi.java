@@ -12,13 +12,17 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class Taxi implements Callable<Void> {
+    private static final Logger logger = LogManager.getLogger(Taxi.class);
     private final String id;
     private Location location;
 
     private final Lock lock = new ReentrantLock();
     private final Condition hasPassenger = lock.newCondition();
-    private final Queue<Passenger> queue = new LinkedList<>();
+    private final Queue<Passenger> queuePassenger = new LinkedList<>();
 
     private TaxiState state = new IdleState();
 
@@ -43,7 +47,7 @@ public class Taxi implements Callable<Void> {
     public void assignPassenger(Passenger p) {
         lock.lock();
         try {
-            queue.offer(p);
+            queuePassenger.offer(p);
             hasPassenger.signal();
         } finally {
             lock.unlock();
@@ -57,10 +61,10 @@ public class Taxi implements Callable<Void> {
             Passenger p = null;
             lock.lock();
             try {
-                while (queue.isEmpty()) {
+                while (queuePassenger.isEmpty()) {
                     hasPassenger.await();
                 }
-                p = queue.poll();
+                p = queuePassenger.poll();
             } catch (InterruptedException e) {
                 break;
             } finally {
@@ -69,11 +73,11 @@ public class Taxi implements Callable<Void> {
 
             if (p != null) {
                 setState(new AssignedState(p));
-                state.handleTaxi(this); // едем к пассажиру
+                state.handleTaxi(this);
 
-                state.handleTaxi(this); // везём пассажира
+                state.handleTaxi(this);
             } else {
-                state.handleTaxi(this); // если нет пассажиров
+                state.handleTaxi(this);
             }
         }
         return null;

@@ -2,10 +2,14 @@ package by.maksim.darvin.threads.statements;
 
 import by.maksim.darvin.threads.Passenger;
 import by.maksim.darvin.threads.Taxi;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.concurrent.TimeUnit;
 
 public class DrivingState implements TaxiState {
+
+    private static final Logger logger = LogManager.getLogger(DrivingState.class);
 
     private Passenger passenger;
     public DrivingState(Passenger passenger) {
@@ -14,14 +18,15 @@ public class DrivingState implements TaxiState {
 
     @Override
     public void handleTaxi(Taxi taxi) {
-        System.out.println(taxi.getId() + " assepted " + passenger.getName());
+        logger.info("{} accepted {}", taxi.getId(), passenger.getName());
         try {
             TimeUnit.MILLISECONDS.sleep(800);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
+            logger.warn("{} \n" + "interrupted during the trip", taxi.getId(), e);
         }
         taxi.setLocation(passenger.getDestination());
-        System.out.println(taxi.getId() + " drive to " + passenger.getName() + " in " + passenger.getDestination());
+        logger.info("{} delivered {} to {}", taxi.getId(), passenger.getName(), passenger.getDestination());
         taxi.setState(new IdleState());
     }
 

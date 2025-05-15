@@ -24,7 +24,7 @@ public class Taxi implements Runnable {
     private final Condition hasPassenger = lock.newCondition();
     private final Queue<Passenger> queuePassenger = new LinkedList<>();
 
-    private TaxiState state = new IdleState();
+    public TaxiState state = new IdleState();
 
     public Taxi(String id, Location location) {
         this.id = id;
@@ -74,9 +74,8 @@ public class Taxi implements Runnable {
             if (p != null) {
                 setState(new AssignedState(p));
                 state.handleTaxi(this);
-
-                state.handleTaxi(this);
             } else {
+                setState(new IdleState());
                 state.handleTaxi(this);
             }
         }

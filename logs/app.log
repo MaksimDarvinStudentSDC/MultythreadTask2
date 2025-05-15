@@ -678,3 +678,103 @@ got a taxi T1
 [2025-05-13 18:34:52] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.DrivingState - T7 accepted Alice
 [2025-05-13 18:34:53] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.DrivingState - T10 delivered Eve to by.maksim.darvin.threads.location.Location@4ec289ac
 [2025-05-13 18:34:53] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.DrivingState - T7 delivered Alice to by.maksim.darvin.threads.location.Location@36f8fd6a
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-14] by.maksim.darvin.threads.model.Passenger - Dave 
+got a taxi T7
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-12] by.maksim.darvin.threads.model.Passenger - Bob 
+got a taxi T7
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-28] by.maksim.darvin.threads.model.Passenger - Ruth 
+got a taxi T4
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-23] by.maksim.darvin.threads.model.Passenger - Mia 
+got a taxi T3
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-29] by.maksim.darvin.threads.model.Passenger - Sam 
+got a taxi T2
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-22] by.maksim.darvin.threads.model.Passenger - Leo 
+got a taxi T4
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-19] by.maksim.darvin.threads.model.Passenger - Ivan 
+got a taxi T9
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-16] by.maksim.darvin.threads.model.Passenger - Frank 
+got a taxi T4
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-20] by.maksim.darvin.threads.model.Passenger - Judy 
+got a taxi T2
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-17] by.maksim.darvin.threads.model.Passenger - Grace 
+got a taxi T8
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-21] by.maksim.darvin.threads.model.Passenger - Kate 
+got a taxi T7
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-15] by.maksim.darvin.threads.model.Passenger - Eve 
+got a taxi T10
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-25] by.maksim.darvin.threads.model.Passenger - Oscar 
+got a taxi T9
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-30] by.maksim.darvin.threads.model.Passenger - Tina 
+got a taxi T3
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-13] by.maksim.darvin.threads.model.Passenger - Carol 
+got a taxi T10
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-26] by.maksim.darvin.threads.model.Passenger - Peggy 
+got a taxi T10
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-18] by.maksim.darvin.threads.model.Passenger - Heidi 
+got a taxi T9
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-24] by.maksim.darvin.threads.model.Passenger - Nick 
+got a taxi T1
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-11] by.maksim.darvin.threads.model.Passenger - Alice 
+got a taxi T7
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-27] by.maksim.darvin.threads.model.Passenger - Quinn 
+got a taxi T10
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-3] by.maksim.darvin.threads.statements.AssignedState - T3 go to passenger Mia
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.AssignedState - T10 go to passenger Eve
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-8] by.maksim.darvin.threads.statements.AssignedState - T8 go to passenger Grace
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-4] by.maksim.darvin.threads.statements.AssignedState - T4 go to passenger Ruth
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-2] by.maksim.darvin.threads.statements.AssignedState - T2 go to passenger Sam
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-1] by.maksim.darvin.threads.statements.AssignedState - T1 go to passenger Nick
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-9] by.maksim.darvin.threads.statements.AssignedState - T9 go to passenger Ivan
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.AssignedState - T7 go to passenger Dave
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.DrivingState - T10 accepted Eve
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-8] by.maksim.darvin.threads.statements.DrivingState - T8 accepted Grace
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.DrivingState - T7 accepted Dave
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-4] by.maksim.darvin.threads.statements.DrivingState - T4 accepted Ruth
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-1] by.maksim.darvin.threads.statements.DrivingState - T1 accepted Nick
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-2] by.maksim.darvin.threads.statements.DrivingState - T2 accepted Sam
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-9] by.maksim.darvin.threads.statements.DrivingState - T9 accepted Ivan
+[2025-05-15 15:42:58] [INFO ] [pool-2-thread-3] by.maksim.darvin.threads.statements.DrivingState - T3 accepted Mia
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.DrivingState - T10 delivered Eve to by.maksim.darvin.threads.location.Location@395f456f
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.DrivingState - T7 delivered Dave to by.maksim.darvin.threads.location.Location@a2d435b
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.AssignedState - T10 go to passenger Carol
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.AssignedState - T7 go to passenger Bob
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-8] by.maksim.darvin.threads.statements.DrivingState - T8 delivered Grace to by.maksim.darvin.threads.location.Location@1387dc0
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-1] by.maksim.darvin.threads.statements.DrivingState - T1 delivered Nick to by.maksim.darvin.threads.location.Location@254d36de
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-9] by.maksim.darvin.threads.statements.DrivingState - T9 delivered Ivan to by.maksim.darvin.threads.location.Location@779df34f
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-3] by.maksim.darvin.threads.statements.DrivingState - T3 delivered Mia to by.maksim.darvin.threads.location.Location@652243c6
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-4] by.maksim.darvin.threads.statements.DrivingState - T4 delivered Ruth to by.maksim.darvin.threads.location.Location@769556f1
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-4] by.maksim.darvin.threads.statements.AssignedState - T4 go to passenger Leo
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-3] by.maksim.darvin.threads.statements.AssignedState - T3 go to passenger Tina
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-2] by.maksim.darvin.threads.statements.DrivingState - T2 delivered Sam to by.maksim.darvin.threads.location.Location@ec4f9d
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-9] by.maksim.darvin.threads.statements.AssignedState - T9 go to passenger Oscar
+[2025-05-15 15:42:59] [INFO ] [pool-2-thread-2] by.maksim.darvin.threads.statements.AssignedState - T2 go to passenger Judy
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.DrivingState - T10 accepted Carol
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.DrivingState - T7 accepted Bob
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-3] by.maksim.darvin.threads.statements.DrivingState - T3 accepted Tina
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-4] by.maksim.darvin.threads.statements.DrivingState - T4 accepted Leo
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-9] by.maksim.darvin.threads.statements.DrivingState - T9 accepted Oscar
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-2] by.maksim.darvin.threads.statements.DrivingState - T2 accepted Judy
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.DrivingState - T10 delivered Carol to by.maksim.darvin.threads.location.Location@3798bc34
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.DrivingState - T7 delivered Bob to by.maksim.darvin.threads.location.Location@4eaac6e
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.AssignedState - T7 go to passenger Kate
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-3] by.maksim.darvin.threads.statements.DrivingState - T3 delivered Tina to by.maksim.darvin.threads.location.Location@611ddbba
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.AssignedState - T10 go to passenger Peggy
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-4] by.maksim.darvin.threads.statements.DrivingState - T4 delivered Leo to by.maksim.darvin.threads.location.Location@72aadcfb
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-9] by.maksim.darvin.threads.statements.DrivingState - T9 delivered Oscar to by.maksim.darvin.threads.location.Location@795a13cc
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-2] by.maksim.darvin.threads.statements.DrivingState - T2 delivered Judy to by.maksim.darvin.threads.location.Location@e2bb1f0
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-9] by.maksim.darvin.threads.statements.AssignedState - T9 go to passenger Heidi
+[2025-05-15 15:43:00] [INFO ] [pool-2-thread-4] by.maksim.darvin.threads.statements.AssignedState - T4 go to passenger Frank
+[2025-05-15 15:43:01] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.DrivingState - T7 accepted Kate
+[2025-05-15 15:43:01] [INFO ] [pool-2-thread-9] by.maksim.darvin.threads.statements.DrivingState - T9 accepted Heidi
+[2025-05-15 15:43:01] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.DrivingState - T10 accepted Peggy
+[2025-05-15 15:43:01] [INFO ] [pool-2-thread-4] by.maksim.darvin.threads.statements.DrivingState - T4 accepted Frank
+[2025-05-15 15:43:02] [INFO ] [pool-2-thread-9] by.maksim.darvin.threads.statements.DrivingState - T9 delivered Heidi to by.maksim.darvin.threads.location.Location@7d65983f
+[2025-05-15 15:43:02] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.DrivingState - T10 delivered Peggy to by.maksim.darvin.threads.location.Location@33a72e1f
+[2025-05-15 15:43:02] [INFO ] [pool-2-thread-4] by.maksim.darvin.threads.statements.DrivingState - T4 delivered Frank to by.maksim.darvin.threads.location.Location@37a85cca
+[2025-05-15 15:43:02] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.AssignedState - T10 go to passenger Quinn
+[2025-05-15 15:43:02] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.DrivingState - T7 delivered Kate to by.maksim.darvin.threads.location.Location@d5282b
+[2025-05-15 15:43:02] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.AssignedState - T7 go to passenger Alice
+[2025-05-15 15:43:02] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.DrivingState - T7 accepted Alice
+[2025-05-15 15:43:02] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.DrivingState - T10 accepted Quinn
+[2025-05-15 15:43:03] [INFO ] [pool-2-thread-7] by.maksim.darvin.threads.statements.DrivingState - T7 delivered Alice to by.maksim.darvin.threads.location.Location@45d7a655
+[2025-05-15 15:43:03] [INFO ] [pool-2-thread-10] by.maksim.darvin.threads.statements.DrivingState - T10 delivered Quinn to by.maksim.darvin.threads.location.Location@76a5b60f

@@ -1,5 +1,8 @@
-package by.maksim.darvin.threads;
+package by.maksim.darvin.threads.util;
 
+import by.maksim.darvin.threads.model.Dispatcher;
+import by.maksim.darvin.threads.model.Passenger;
+import by.maksim.darvin.threads.model.Taxi;
 import by.maksim.darvin.threads.location.Location;
 
 import java.io.BufferedReader;

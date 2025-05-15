@@ -1,6 +1,6 @@
 package by.maksim.darvin.threads.statements;
 
-import by.maksim.darvin.threads.Taxi;
+import by.maksim.darvin.threads.model.Taxi;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

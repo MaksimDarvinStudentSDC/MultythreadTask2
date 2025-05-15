@@ -1,4 +1,4 @@
-package by.maksim.darvin.threads;
+package by.maksim.darvin.threads.model;
 
 import by.maksim.darvin.threads.location.Location;
 import by.maksim.darvin.threads.statements.AssignedState;
@@ -15,7 +15,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Taxi implements Callable<Void> {
+public class Taxi implements Runnable {
     private static final Logger logger = LogManager.getLogger(Taxi.class);
     private final String id;
     private Location location;
@@ -55,7 +55,7 @@ public class Taxi implements Callable<Void> {
     }
 
     @Override
-    public Void call() {
+    public void run() {
         Dispatcher.getInstance().registerTaxi(this);
         while (!Thread.currentThread().isInterrupted()) {
             Passenger p = null;
@@ -80,7 +80,6 @@ public class Taxi implements Callable<Void> {
                 state.handleTaxi(this);
             }
         }
-        return null;
         }
     }
 

@@ -1,4 +1,4 @@
-package by.maksim.darvin.threads;
+package by.maksim.darvin.threads.model;
 
 import by.maksim.darvin.threads.location.Location;
 import org.apache.logging.log4j.LogManager;

@@ -1,5 +1,9 @@
-package by.maksim.darvin.threads;
+package by.maksim.darvin.threads.app;
 
+import by.maksim.darvin.threads.model.Dispatcher;
+import by.maksim.darvin.threads.model.Passenger;
+import by.maksim.darvin.threads.model.Taxi;
+import by.maksim.darvin.threads.util.DataLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,4 +1,4 @@
-package by.maksim.darvin.threads;
+package by.maksim.darvin.threads.model;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-class Dispatcher {
+public class Dispatcher {
     private static Dispatcher instance;
     private static final Lock initLock = new ReentrantLock();
 

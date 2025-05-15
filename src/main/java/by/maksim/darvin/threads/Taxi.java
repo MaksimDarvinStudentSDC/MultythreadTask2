@@ -24,7 +24,11 @@ public class Taxi implements Callable<Void> {
     private final Condition hasPassenger = lock.newCondition();
     private final Queue<Passenger> queuePassenger = new LinkedList<>();
 
-    private TaxiState state = new IdleState();
+    public TaxiState state ;
+
+    public void changeState(TaxiState state) {
+        this.state = state;
+    }
 
     public Taxi(String id, Location location) {
         this.id = id;
@@ -72,11 +76,10 @@ public class Taxi implements Callable<Void> {
             }
 
             if (p != null) {
-                setState(new AssignedState(p));
-                state.handleTaxi(this);
-
+                changeState(new AssignedState(p));
                 state.handleTaxi(this);
             } else {
+                changeState(new IdleState());
                 state.handleTaxi(this);
             }
         }

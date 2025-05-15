@@ -27,7 +27,9 @@ public class DrivingState implements TaxiState {
         }
         taxi.setLocation(passenger.getDestination());
         logger.info("{} delivered {} to {}", taxi.getId(), passenger.getName(), passenger.getDestination());
-        taxi.setState(new IdleState());
+        //taxi.setState(new IdleState());
+        taxi.changeState(new IdleState());
+
     }
 
     @Override

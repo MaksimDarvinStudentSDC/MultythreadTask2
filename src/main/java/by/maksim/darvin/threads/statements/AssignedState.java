@@ -24,7 +24,9 @@ public class AssignedState implements TaxiState {
             Thread.currentThread().interrupt();
             logger.warn("{}\n" + "interrupted while waiting before going to the passenger", taxi.getId(), e);
         }
-        taxi.setState(new DrivingState(passenger));
+        //taxi.setState(new DrivingState(passenger));
+        taxi.changeState(new DrivingState(passenger));
+        taxi.state.handleTaxi(taxi);
     }
 
     @Override

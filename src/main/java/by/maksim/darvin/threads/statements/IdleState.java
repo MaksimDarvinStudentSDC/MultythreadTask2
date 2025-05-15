@@ -1,10 +1,12 @@
 package by.maksim.darvin.threads.statements;
 
+import by.maksim.darvin.threads.Passenger;
 import by.maksim.darvin.threads.Taxi;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class IdleState implements TaxiState {
+
 
     private static final Logger logger = LogManager.getLogger(IdleState.class);
     @Override

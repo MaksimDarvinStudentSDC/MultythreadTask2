@@ -14,10 +14,10 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) throws Exception {
         Dispatcher dispatcher = Dispatcher.getInstance();
-
         List<Taxi> taxis = DataLoader.loadTaxis("src/main/resources/data.txt");
         List<Passenger> passengers = DataLoader.loadPassengers("src/main/resources/data.txt", dispatcher);
         int totalThreads = taxis.size() + passengers.size();
+
         if (totalThreads == 0) {
             logger.error("\n" + "No taxi or passengers. Check the contents of the data.txt file.");
             return;

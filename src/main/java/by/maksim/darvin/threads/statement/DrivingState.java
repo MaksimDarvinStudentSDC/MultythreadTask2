@@ -1,4 +1,4 @@
-package by.maksim.darvin.threads.statements;
+package by.maksim.darvin.threads.statement;
 
 import by.maksim.darvin.threads.model.Passenger;
 import by.maksim.darvin.threads.model.Taxi;
@@ -30,9 +30,9 @@ public class DrivingState implements TaxiState {
         taxi.setState(new IdleState());
     }
 
-    @Override
+  /*  @Override
     public String getState() {
         return "Driving";
     }
-
+*/
 }

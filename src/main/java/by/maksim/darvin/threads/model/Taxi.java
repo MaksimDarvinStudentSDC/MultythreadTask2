@@ -1,13 +1,12 @@
 package by.maksim.darvin.threads.model;
 
 import by.maksim.darvin.threads.location.Location;
-import by.maksim.darvin.threads.statements.AssignedState;
-import by.maksim.darvin.threads.statements.IdleState;
-import by.maksim.darvin.threads.statements.TaxiState;
+import by.maksim.darvin.threads.statement.AssignedState;
+import by.maksim.darvin.threads.statement.IdleState;
+import by.maksim.darvin.threads.statement.TaxiState;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.Callable;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -17,6 +16,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Taxi implements Runnable {
     private static final Logger logger = LogManager.getLogger(Taxi.class);
+
     private final String id;
     private Location location;
 
@@ -57,6 +57,7 @@ public class Taxi implements Runnable {
     @Override
     public void run() {
         Dispatcher.getInstance().registerTaxi(this);
+
         while (!Thread.currentThread().isInterrupted()) {
             Passenger p = null;
             lock.lock();

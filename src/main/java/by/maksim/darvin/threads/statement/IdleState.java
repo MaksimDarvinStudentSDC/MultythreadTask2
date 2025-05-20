@@ -1,4 +1,4 @@
-package by.maksim.darvin.threads.statements;
+package by.maksim.darvin.threads.statement;
 
 import by.maksim.darvin.threads.model.Taxi;
 import org.apache.logging.log4j.LogManager;
@@ -12,8 +12,8 @@ public class IdleState implements TaxiState {
         logger.debug("{} in awaiting state", taxi.getId());
     }
 
-    @Override
+   /* @Override
     public String getState() {
         return "Idle";
-    }
+    }*/
 }
